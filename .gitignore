@@ -1,0 +1,5 @@
+# Terraform files
+*.hcl
+
+# terraform installation json
+.terraform

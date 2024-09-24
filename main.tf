@@ -1,0 +1,4 @@
+module "vars" {
+  source = "./modules"
+}
+
