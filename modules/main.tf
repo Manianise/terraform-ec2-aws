@@ -1,5 +1,6 @@
 provider "aws" {
-  region = "eu-west-3"
+  shared_config_files      = ["%USERPROFILE%/.aws/config"]
+  shared_credentials_files = ["%USERPROFILE%/.aws/credentials"]
 }
 
 data "aws_vpc" "euw-3_vpc" {
@@ -65,6 +66,7 @@ resource "aws_route_table_association" "public_route_association_az2" {
 
 resource "aws_key_pair" "aws_key" {
   key_name = "aws-key" 
+  public_key = 
 }
 
 
